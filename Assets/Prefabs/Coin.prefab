@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2189769144001319102}
   - component: {fileID: 7835437227994562430}
   - component: {fileID: 3701966057959246451}
+  - component: {fileID: -2262331285161126258}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -70,6 +71,22 @@ MonoBehaviour:
   OnCoinCollection:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-2262331285161126258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6768406681737612745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c52426a6380f0408167eaa7e77eecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 100
+  frequency: 3
+  magnitude: 0.2
+  offset: 0
 --- !u!1001 &1329078812741109874
 PrefabInstance:
   m_ObjectHideFlags: 0
