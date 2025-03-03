@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class InputManager : MonoBehaviour
 {
     public UnityEvent<Vector3> OnMove = new UnityEvent<Vector3>();
+    public UnityEvent OnSpacePressed = new UnityEvent();
 
 
     void Update()
@@ -23,5 +24,10 @@ public class InputManager : MonoBehaviour
             inputVector += Vector3.left;
 
         OnMove?.Invoke(inputVector);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnSpacePressed?.Invoke();
+        }
     }
 }
